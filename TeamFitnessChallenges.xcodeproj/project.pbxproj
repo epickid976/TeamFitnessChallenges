@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8214D2E62AC384740084AF85 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8214D2E52AC384740084AF85 /* DataManager.swift */; };
+		82F791AA2ABB2664009DE26A /* TeamFitnessChallengesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791A92ABB2664009DE26A /* TeamFitnessChallengesApp.swift */; };
+		82F791AC2ABB2664009DE26A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791AB2ABB2664009DE26A /* ContentView.swift */; };
+		82F791AE2ABB2665009DE26A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F791AD2ABB2665009DE26A /* Assets.xcassets */; };
+		82F791B12ABB2665009DE26A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F791B02ABB2665009DE26A /* Preview Assets.xcassets */; };
+		82F791B32ABB2665009DE26A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791B22ABB2665009DE26A /* Persistence.swift */; };
+		82F791B62ABB2665009DE26A /* TeamFitnessChallenges.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82F791B42ABB2665009DE26A /* TeamFitnessChallenges.xcdatamodeld */; };
+		82F791C32ABB3AD8009DE26A /* GoogleAPIClientForRESTCore in Frameworks */ = {isa = PBXBuildFile; productRef = 82F791C22ABB3AD8009DE26A /* GoogleAPIClientForRESTCore */; };
+		82F791C52ABB3AD8009DE26A /* GoogleAPIClientForREST_ACMEDNS in Frameworks */ = {isa = PBXBuildFile; productRef = 82F791C42ABB3AD8009DE26A /* GoogleAPIClientForREST_ACMEDNS */; };
+		82F791C72ABB3AD8009DE26A /* GoogleAPIClientForREST_AIPlatformNotebooks in Frameworks */ = {isa = PBXBuildFile; productRef = 82F791C62ABB3AD8009DE26A /* GoogleAPIClientForREST_AIPlatformNotebooks */; };
+		82F791C92ABB3AD8009DE26A /* GoogleAPIClientForREST_APIGateway in Frameworks */ = {isa = PBXBuildFile; productRef = 82F791C82ABB3AD8009DE26A /* GoogleAPIClientForREST_APIGateway */; };
+		82F791CB2ABB3AD8009DE26A /* GoogleAPIClientForREST_AbusiveExperienceReport in Frameworks */ = {isa = PBXBuildFile; productRef = 82F791CA2ABB3AD8009DE26A /* GoogleAPIClientForREST_AbusiveExperienceReport */; };
+		82F791CD2AC231D4009DE26A /* HKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791CC2AC231D4009DE26A /* HKManager.swift */; };
+		82F791DF2AC35D4F009DE26A /* Achievements+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791CF2AC35D4F009DE26A /* Achievements+CoreDataClass.swift */; };
+		82F791E02AC35D4F009DE26A /* Achievements+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D02AC35D4F009DE26A /* Achievements+CoreDataProperties.swift */; };
+		82F791E12AC35D4F009DE26A /* ChallengeUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D12AC35D4F009DE26A /* ChallengeUser+CoreDataClass.swift */; };
+		82F791E22AC35D4F009DE26A /* ChallengeUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D22AC35D4F009DE26A /* ChallengeUser+CoreDataProperties.swift */; };
+		82F791E32AC35D4F009DE26A /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D32AC35D4F009DE26A /* User+CoreDataClass.swift */; };
+		82F791E42AC35D4F009DE26A /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D42AC35D4F009DE26A /* User+CoreDataProperties.swift */; };
+		82F791E52AC35D4F009DE26A /* UserFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D52AC35D4F009DE26A /* UserFriend+CoreDataClass.swift */; };
+		82F791E62AC35D4F009DE26A /* UserFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D62AC35D4F009DE26A /* UserFriend+CoreDataProperties.swift */; };
+		82F791E72AC35D4F009DE26A /* Tournament+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D72AC35D4F009DE26A /* Tournament+CoreDataClass.swift */; };
+		82F791E82AC35D4F009DE26A /* Tournament+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D82AC35D4F009DE26A /* Tournament+CoreDataProperties.swift */; };
+		82F791E92AC35D4F009DE26A /* FriendRequest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791D92AC35D4F009DE26A /* FriendRequest+CoreDataClass.swift */; };
+		82F791EA2AC35D4F009DE26A /* FriendRequest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791DA2AC35D4F009DE26A /* FriendRequest+CoreDataProperties.swift */; };
+		82F791EB2AC35D4F009DE26A /* Challenge+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791DB2AC35D4F009DE26A /* Challenge+CoreDataClass.swift */; };
+		82F791EC2AC35D4F009DE26A /* Challenge+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791DC2AC35D4F009DE26A /* Challenge+CoreDataProperties.swift */; };
+		82F791ED2AC35D4F009DE26A /* TournamentTarget+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791DD2AC35D4F009DE26A /* TournamentTarget+CoreDataClass.swift */; };
+		82F791EE2AC35D4F009DE26A /* TournamentTarget+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F791DE2AC35D4F009DE26A /* TournamentTarget+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8214D2E52AC384740084AF85 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		82F791A62ABB2664009DE26A /* TeamFitnessChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamFitnessChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F791A92ABB2664009DE26A /* TeamFitnessChallengesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFitnessChallengesApp.swift; sourceTree = "<group>"; };
+		82F791AB2ABB2664009DE26A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82F791AD2ABB2665009DE26A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82F791B02ABB2665009DE26A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82F791B22ABB2665009DE26A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		82F791B52ABB2665009DE26A /* TeamFitnessChallenges.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeamFitnessChallenges.xcdatamodel; sourceTree = "<group>"; };
+		82F791CC2AC231D4009DE26A /* HKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKManager.swift; sourceTree = "<group>"; };
+		82F791CE2AC233E7009DE26A /* TeamFitnessChallenges.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeamFitnessChallenges.entitlements; sourceTree = "<group>"; };
+		82F791CF2AC35D4F009DE26A /* Achievements+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Achievements+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82F791D02AC35D4F009DE26A /* Achievements+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Achievements+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82F791D12AC35D4F009DE26A /* ChallengeUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82F791D22AC35D4F009DE26A /* ChallengeUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82F791D32AC35D4F009DE26A /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82F791D42AC35D4F009DE26A /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82F791D52AC35D4F009DE26A /* UserFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserFriend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82F791D62AC35D4F009DE26A /* UserFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserFriend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82F791D72AC35D4F009DE26A /* Tournament+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tournament+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82F791D82AC35D4F009DE26A /* Tournament+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tournament+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82F791D92AC35D4F009DE26A /* FriendRequest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendRequest+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82F791DA2AC35D4F009DE26A /* FriendRequest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendRequest+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82F791DB2AC35D4F009DE26A /* Challenge+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82F791DC2AC35D4F009DE26A /* Challenge+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82F791DD2AC35D4F009DE26A /* TournamentTarget+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TournamentTarget+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82F791DE2AC35D4F009DE26A /* TournamentTarget+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TournamentTarget+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82F791A32ABB2664009DE26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F791C32ABB3AD8009DE26A /* GoogleAPIClientForRESTCore in Frameworks */,
+				82F791C92ABB3AD8009DE26A /* GoogleAPIClientForREST_APIGateway in Frameworks */,
+				82F791C72ABB3AD8009DE26A /* GoogleAPIClientForREST_AIPlatformNotebooks in Frameworks */,
+				82F791CB2ABB3AD8009DE26A /* GoogleAPIClientForREST_AbusiveExperienceReport in Frameworks */,
+				82F791C52ABB3AD8009DE26A /* GoogleAPIClientForREST_ACMEDNS in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8214D2E72AC389F40084AF85 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				82F791CC2AC231D4009DE26A /* HKManager.swift */,
+				8214D2E52AC384740084AF85 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		82F7919D2ABB2664009DE26A = {
+			isa = PBXGroup;
+			children = (
+				82F791A82ABB2664009DE26A /* TeamFitnessChallenges */,
+				82F791A72ABB2664009DE26A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82F791A72ABB2664009DE26A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82F791A62ABB2664009DE26A /* TeamFitnessChallenges.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82F791A82ABB2664009DE26A /* TeamFitnessChallenges */ = {
+			isa = PBXGroup;
+			children = (
+				82F791CE2AC233E7009DE26A /* TeamFitnessChallenges.entitlements */,
+				82F791A92ABB2664009DE26A /* TeamFitnessChallengesApp.swift */,
+				82F791AB2ABB2664009DE26A /* ContentView.swift */,
+				82F791AD2ABB2665009DE26A /* Assets.xcassets */,
+				8214D2E72AC389F40084AF85 /* Managers */,
+				82F791F12AC35E94009DE26A /* CoreData */,
+				82F791AF2ABB2665009DE26A /* Preview Content */,
+			);
+			path = TeamFitnessChallenges;
+			sourceTree = "<group>";
+		};
+		82F791AF2ABB2665009DE26A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82F791B02ABB2665009DE26A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82F791EF2AC35D90009DE26A /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				82F791D02AC35D4F009DE26A /* Achievements+CoreDataProperties.swift */,
+				82F791D22AC35D4F009DE26A /* ChallengeUser+CoreDataProperties.swift */,
+				82F791D42AC35D4F009DE26A /* User+CoreDataProperties.swift */,
+				82F791D62AC35D4F009DE26A /* UserFriend+CoreDataProperties.swift */,
+				82F791D82AC35D4F009DE26A /* Tournament+CoreDataProperties.swift */,
+				82F791DA2AC35D4F009DE26A /* FriendRequest+CoreDataProperties.swift */,
+				82F791DC2AC35D4F009DE26A /* Challenge+CoreDataProperties.swift */,
+				82F791DE2AC35D4F009DE26A /* TournamentTarget+CoreDataProperties.swift */,
+			);
+			path = CoreDataClasses;
+			sourceTree = "<group>";
+		};
+		82F791F02AC35DA6009DE26A /* CoreDataExtras */ = {
+			isa = PBXGroup;
+			children = (
+				82F791CF2AC35D4F009DE26A /* Achievements+CoreDataClass.swift */,
+				82F791D12AC35D4F009DE26A /* ChallengeUser+CoreDataClass.swift */,
+				82F791D32AC35D4F009DE26A /* User+CoreDataClass.swift */,
+				82F791D52AC35D4F009DE26A /* UserFriend+CoreDataClass.swift */,
+				82F791D72AC35D4F009DE26A /* Tournament+CoreDataClass.swift */,
+				82F791D92AC35D4F009DE26A /* FriendRequest+CoreDataClass.swift */,
+				82F791DB2AC35D4F009DE26A /* Challenge+CoreDataClass.swift */,
+				82F791DD2AC35D4F009DE26A /* TournamentTarget+CoreDataClass.swift */,
+			);
+			path = CoreDataExtras;
+			sourceTree = "<group>";
+		};
+		82F791F12AC35E94009DE26A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				82F791B22ABB2665009DE26A /* Persistence.swift */,
+				82F791B42ABB2665009DE26A /* TeamFitnessChallenges.xcdatamodeld */,
+				82F791EF2AC35D90009DE26A /* CoreDataClasses */,
+				82F791F02AC35DA6009DE26A /* CoreDataExtras */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82F791A52ABB2664009DE26A /* TeamFitnessChallenges */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F791B92ABB2665009DE26A /* Build configuration list for PBXNativeTarget "TeamFitnessChallenges" */;
+			buildPhases = (
+				82F791A22ABB2664009DE26A /* Sources */,
+				82F791A32ABB2664009DE26A /* Frameworks */,
+				82F791A42ABB2664009DE26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeamFitnessChallenges;
+			packageProductDependencies = (
+				82F791C22ABB3AD8009DE26A /* GoogleAPIClientForRESTCore */,
+				82F791C42ABB3AD8009DE26A /* GoogleAPIClientForREST_ACMEDNS */,
+				82F791C62ABB3AD8009DE26A /* GoogleAPIClientForREST_AIPlatformNotebooks */,
+				82F791C82ABB3AD8009DE26A /* GoogleAPIClientForREST_APIGateway */,
+				82F791CA2ABB3AD8009DE26A /* GoogleAPIClientForREST_AbusiveExperienceReport */,
+			);
+			productName = TeamFitnessChallenges;
+			productReference = 82F791A62ABB2664009DE26A /* TeamFitnessChallenges.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82F7919E2ABB2664009DE26A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					82F791A52ABB2664009DE26A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 82F791A12ABB2664009DE26A /* Build configuration list for PBXProject "TeamFitnessChallenges" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82F7919D2ABB2664009DE26A;
+			packageReferences = (
+				82F791C12ABB3AD8009DE26A /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
+			);
+			productRefGroup = 82F791A72ABB2664009DE26A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82F791A52ABB2664009DE26A /* TeamFitnessChallenges */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82F791A42ABB2664009DE26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F791B12ABB2665009DE26A /* Preview Assets.xcassets in Resources */,
+				82F791AE2ABB2665009DE26A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82F791A22ABB2664009DE26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F791E52AC35D4F009DE26A /* UserFriend+CoreDataClass.swift in Sources */,
+				82F791DF2AC35D4F009DE26A /* Achievements+CoreDataClass.swift in Sources */,
+				82F791E62AC35D4F009DE26A /* UserFriend+CoreDataProperties.swift in Sources */,
+				82F791ED2AC35D4F009DE26A /* TournamentTarget+CoreDataClass.swift in Sources */,
+				82F791EC2AC35D4F009DE26A /* Challenge+CoreDataProperties.swift in Sources */,
+				82F791EB2AC35D4F009DE26A /* Challenge+CoreDataClass.swift in Sources */,
+				82F791E92AC35D4F009DE26A /* FriendRequest+CoreDataClass.swift in Sources */,
+				82F791B32ABB2665009DE26A /* Persistence.swift in Sources */,
+				82F791CD2AC231D4009DE26A /* HKManager.swift in Sources */,
+				82F791EE2AC35D4F009DE26A /* TournamentTarget+CoreDataProperties.swift in Sources */,
+				82F791E22AC35D4F009DE26A /* ChallengeUser+CoreDataProperties.swift in Sources */,
+				82F791E32AC35D4F009DE26A /* User+CoreDataClass.swift in Sources */,
+				82F791E02AC35D4F009DE26A /* Achievements+CoreDataProperties.swift in Sources */,
+				82F791AC2ABB2664009DE26A /* ContentView.swift in Sources */,
+				82F791EA2AC35D4F009DE26A /* FriendRequest+CoreDataProperties.swift in Sources */,
+				82F791E42AC35D4F009DE26A /* User+CoreDataProperties.swift in Sources */,
+				82F791AA2ABB2664009DE26A /* TeamFitnessChallengesApp.swift in Sources */,
+				82F791E12AC35D4F009DE26A /* ChallengeUser+CoreDataClass.swift in Sources */,
+				82F791E72AC35D4F009DE26A /* Tournament+CoreDataClass.swift in Sources */,
+				8214D2E62AC384740084AF85 /* DataManager.swift in Sources */,
+				82F791B62ABB2665009DE26A /* TeamFitnessChallenges.xcdatamodeld in Sources */,
+				82F791E82AC35D4F009DE26A /* Tournament+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82F791B72ABB2665009DE26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82F791B82ABB2665009DE26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82F791BA2ABB2665009DE26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TeamFitnessChallenges/TeamFitnessChallenges.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeamFitnessChallenges/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FLCXFF4D9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jose.Blanco.TeamFitnessChallenges;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82F791BB2ABB2665009DE26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TeamFitnessChallenges/TeamFitnessChallenges.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeamFitnessChallenges/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FLCXFF4D9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jose.Blanco.TeamFitnessChallenges;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82F791A12ABB2664009DE26A /* Build configuration list for PBXProject "TeamFitnessChallenges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F791B72ABB2665009DE26A /* Debug */,
+				82F791B82ABB2665009DE26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F791B92ABB2665009DE26A /* Build configuration list for PBXNativeTarget "TeamFitnessChallenges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F791BA2ABB2665009DE26A /* Debug */,
+				82F791BB2ABB2665009DE26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82F791C12ABB3AD8009DE26A /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82F791C22ABB3AD8009DE26A /* GoogleAPIClientForRESTCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F791C12ABB3AD8009DE26A /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForRESTCore;
+		};
+		82F791C42ABB3AD8009DE26A /* GoogleAPIClientForREST_ACMEDNS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F791C12ABB3AD8009DE26A /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_ACMEDNS;
+		};
+		82F791C62ABB3AD8009DE26A /* GoogleAPIClientForREST_AIPlatformNotebooks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F791C12ABB3AD8009DE26A /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AIPlatformNotebooks;
+		};
+		82F791C82ABB3AD8009DE26A /* GoogleAPIClientForREST_APIGateway */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F791C12ABB3AD8009DE26A /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_APIGateway;
+		};
+		82F791CA2ABB3AD8009DE26A /* GoogleAPIClientForREST_AbusiveExperienceReport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F791C12ABB3AD8009DE26A /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_AbusiveExperienceReport;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		82F791B42ABB2665009DE26A /* TeamFitnessChallenges.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82F791B52ABB2665009DE26A /* TeamFitnessChallenges.xcdatamodel */,
+			);
+			currentVersion = 82F791B52ABB2665009DE26A /* TeamFitnessChallenges.xcdatamodel */;
+			path = TeamFitnessChallenges.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82F7919E2ABB2664009DE26A /* Project object */;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22221.1" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Achievements" representedClassName="Achievements" syncable="YES">
+        <attribute name="date" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="eventId" attributeType="String"/>
+        <attribute name="type" attributeType="String"/>
+        <attribute name="user" attributeType="String"/>
+    </entity>
+    <entity name="Challenge" representedClassName="Challenge" syncable="YES">
+        <attribute name="completionDate" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="endDate" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="startDate" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" attributeType="String"/>
+        <attribute name="targetQuantity" attributeType="String"/>
+        <attribute name="targetType" attributeType="String"/>
+        <attribute name="type" attributeType="String"/>
+    </entity>
+    <entity name="ChallengeUser" representedClassName="ChallengeUser" syncable="YES">
+        <attribute name="challenge" attributeType="String"/>
+        <attribute name="lastDate" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantity" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="user" attributeType="String"/>
+    </entity>
+    <entity name="FriendRequest" representedClassName="FriendRequest" syncable="YES">
+        <attribute name="date" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fromUser" attributeType="String"/>
+        <attribute name="status" attributeType="String"/>
+        <attribute name="toUser" attributeType="String"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Tournament" representedClassName="Tournament" syncable="YES">
+        <attribute name="endDate" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="image" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="startDate" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" attributeType="String"/>
+        <attribute name="targetQuantity" attributeType="String"/>
+        <attribute name="targetType" attributeType="String"/>
+    </entity>
+    <entity name="TournamentTarget" representedClassName="TournamentTarget" syncable="YES">
+        <attribute name="exp" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantity" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tournament" attributeType="String"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="email" attributeType="String"/>
+        <attribute name="experience" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="password" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="email"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="UserFriend" representedClassName="UserFriend" syncable="YES">
+        <attribute name="startDate" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="user1" attributeType="String"/>
+        <attribute name="user2" attributeType="String"/>
+    </entity>
+</model>
